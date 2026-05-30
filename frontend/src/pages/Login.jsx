@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// Importamos algunos íconos para el panel azul
+import { Link } from 'react-router-dom';
 import { CalendarCheck, ShieldCheck, Activity, Stethoscope } from 'lucide-react';
 
 function Login() {
@@ -65,9 +65,9 @@ function Login() {
               </div>
               SaludAgendaX
             </div>
-            <button className="btn btn-sm btn-outline border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-blue-600 hover:border-slate-300 rounded-full px-6">
+            <Link to="/register" className="btn btn-sm btn-outline border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-blue-600 hover:border-slate-300 rounded-full px-6 flex items-center">
               Registrarse
-            </button>
+            </Link>
           </div>
 
           <h2 className="text-2xl font-bold text-slate-800 mb-6">Iniciar Sesión</h2>
@@ -107,7 +107,7 @@ function Login() {
               <input 
                 type="email" 
                 placeholder="usuario@ejemplo.com" 
-                className="input input-bordered w-full bg-slate-50 border-slate-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" 
+                className="input input-bordered w-full bg-slate-50 border-slate-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors text-slate-800" 
               />
             </div>
 
@@ -119,7 +119,7 @@ function Login() {
               <input 
                 type="password" 
                 placeholder="••••••••" 
-                className="input input-bordered w-full bg-slate-50 border-slate-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" 
+                className="input input-bordered w-full bg-slate-50 border-slate-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors text-slate-800" 
               />
             </div>
 
